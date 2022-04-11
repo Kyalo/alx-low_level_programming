@@ -1,8 +1,7 @@
 /*
  * File: 7-print_tebahpla.c
- * Auth: Maurice Kyalo 
+ * Auth: Maurice Kyalo
  */
-
 #include <stdio.h>
 
 /**
