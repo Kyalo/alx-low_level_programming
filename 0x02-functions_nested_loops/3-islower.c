@@ -6,9 +6,10 @@
 #include "main.h"
 
 /**
- * _islower - checks for a lowercase character:
- * 		Returns 1 if arggument is lowercase
- * 		Returns 0 otherwise
+ * _islower - checks for a lowercase character
+ * @c: The character being checked.
+ *
+ * Return: 1 if character is lowercase, otherwise 0.
  */
 int _islower(int c)
 {
@@ -16,4 +17,4 @@ int _islower(int c)
 		return (1);
 	else
 		return (0);
-}	
+}
