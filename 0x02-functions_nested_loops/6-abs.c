@@ -1,5 +1,5 @@
 /*
- * File: 6-abs.c 
+ * File: 6-abs.c
  * Auth: Maurice Kyalo
  */
 
