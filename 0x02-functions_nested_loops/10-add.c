@@ -10,7 +10,7 @@
  * @a: The first number to be added.
  * @b: The second number to be added.
  *
- * Return- Always(0).
+ * Return- The result of the sum.
  */
 int add(int a, int b)
 {
