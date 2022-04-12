@@ -10,7 +10,8 @@
  */
 void print_alphabet_X10(void)
 {
-	char letter, counter;
+	char letter;
+	int counter;
 
 	for (counter = 0; counter < 10; counter++)
 	{
