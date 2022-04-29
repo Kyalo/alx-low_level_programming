@@ -1,5 +1,5 @@
 /*
- * File: 0-puts_recusrion.c
+ * File: 0-puts_recursion.c
  * Auth: Maurice Kyalo
  */
 
