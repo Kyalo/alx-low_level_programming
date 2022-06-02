@@ -8,11 +8,11 @@
  *           function should read and print.
  *
  * Return: If the function fails or filename is NULL - 0.
- *         O/fw - the actual number of bytes the function can read and print.
+ *         O/w - the actual number of bytes the function can read and print.
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	ssize_t fo, fr, fw;
+	ssize_t o, r, w;
 	char *buffer;
 
 	if (filename == NULL)
@@ -22,18 +22,18 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (buffer == NULL)
 		return (0);
 
-	fo = open(filename, O_RDONLY);
-	fr = read(fo, buffer, letters);
-	fw = write(STDOUT_FILENO, buffer, r);
+	o = open(filename, O_RDONLY);
+	r = read(o, buffer, letters);
+	w = write(STDOUT_FILENO, buffer, r);
 
-	if (fo == -1 || fr == -1 || fw == -1 || fw != fr)
+	if (o == -1 || r == -1 || w == -1 || w != r)
 	{
 		free(buffer);
 		return (0);
 	}
 
 	free(buffer);
-	close(fo);
+	close(o);
 
-	return (fw);
+	return (w);
 }
